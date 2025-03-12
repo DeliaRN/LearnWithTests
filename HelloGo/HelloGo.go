@@ -1,7 +1,5 @@
 package HelloGo
 
-import "fmt"
-
 const englishHelloPrefix = "Hello, "
 
 func Hello(name string) string {
@@ -9,8 +7,4 @@ func Hello(name string) string {
 		name = "World"
 	}
 	return englishHelloPrefix + name
-}
-
-func main() {
-	fmt.Println(Hello("Delia"))
 }
