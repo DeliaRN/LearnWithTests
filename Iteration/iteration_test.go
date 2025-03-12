@@ -10,3 +10,10 @@ func TestRepeat(t *testing.T) {
 		t.Errorf("Expected %q but got %q", expected, repeated)
 	}
 }
+
+func BenchmarkRepeat(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		//it runs b.N times when the benchmark is executed
+		Repeat("a") // you test it with go test -bench=
+	}
+}
