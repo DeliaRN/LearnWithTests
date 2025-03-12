@@ -1,0 +1,15 @@
+/ Empty declaration
+var array1 [5]int //Empty Array with fixed size
+var slice1 []int  //Empty Slice
+
+// Initialization
+var array = [5]int{1, 2, 3, 4, 5} //Array with initial values and fixed size
+var slice2 = []int{1, 2, 3, 4, 5} //Slice with initial values
+
+// Initialization with especific size and capacity
+var array3 = [3]string{"Go", "is", "fun"}
+var slice3 = make([]float64, 3, 5) //Initial size 3, capacity
+
+// Declaration with direct use of indeces
+var array4 = [...]int{10, 20, 30} //The size is inferred
+var slice4 = []int{10, 20, 30}
